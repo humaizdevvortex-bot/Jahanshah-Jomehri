@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#111318" />
+  <rect x="3" y="3" width="58" height="58" rx="11" fill="none" stroke="#D9AE55" stroke-width="1.5" stroke-opacity="0.45" />
+  <!-- Architectural roofline and geometric doorway monogram -->
+  <path d="M14 28L32 13L50 28" fill="none" stroke="#D9AE55" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M22 25V47C22 49.2091 20.2091 51 18 51H16" fill="none" stroke="#E8C878" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M42 25V47C42 49.2091 40.2091 51 38 51H33" fill="none" stroke="#D9AE55" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M28 51V34H36V51" fill="none" stroke="#D9AE55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

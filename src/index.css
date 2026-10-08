@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-charcoal: #111318;
+    --color-navy: #111C2C;
+    --color-gold: #D9AE55;
+    --color-gold-soft: #E8C878;
+    --color-ivory: #F8F5EF;
+    --color-offwhite: #FCFBF8;
+    --color-muted: #6F7277;
+    --color-dark-text: #17191D;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    color: var(--color-dark-text);
+    background-color: var(--color-offwhite);
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    text-wrap: balance;
+  }
+}
+
+.font-serif-luxury {
+  font-family: var(--font-serif);
+}
+
+.font-sans-modern {
+  font-family: var(--font-sans);
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+@keyframes subtleZoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.04);
+  }
+}
+
+.animate-scroll-cue {
+  animation: floatSlow 2.6s ease-in-out infinite;
+}
+
+.hero-bg-motion {
+  animation: subtleZoom 24s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-scroll-cue,
+  .hero-bg-motion {
+    animation: none !important;
+  }
+}
+
